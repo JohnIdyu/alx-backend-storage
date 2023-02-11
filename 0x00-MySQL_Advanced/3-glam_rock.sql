@@ -3,4 +3,4 @@
 SELECT  band_name,(ifnull(split,2023) - ifnull(formed,0)) lifespan
 FROM metal_bands
 WHERE style LIKE '%Glam rock%'
-ORDER BY lifespan DESC
+ORDER BY lifespan DESC 
