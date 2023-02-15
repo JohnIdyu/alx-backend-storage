@@ -13,10 +13,10 @@ def print_nginx_request_logs(nginx_collection):
     for method in methods:
         req_count = len(list(nginx_collection.find({'method': method})))
         print('\tmethod {}: {}'.format(method, req_count))
-    status_checks_count = len(list(
-        nginx_collection.find({'method': 'GET', 'path': '/status'})
-    ))
-    print('{} status check'.format(status_checks_count))
+        status_checks_count = len(list(
+            nginx_collection.find({'method': 'GET', 'path': '/status'})
+            ))
+        print('{} status check'.format(status_checks_count))
 
 
 def run():
@@ -26,5 +26,5 @@ def run():
     print_nginx_request_logs(client.logs.nginx)
 
 
-if __name__ == '__main__':
-    run()
+    if __name__ == '__main__':
+        run()
