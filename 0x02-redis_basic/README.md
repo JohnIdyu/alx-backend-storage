@@ -2,7 +2,7 @@
 
 | `Back-end` | `Redis` |
 
-![meme](https://github.com/JohnIdyu/alx-backend-storage/blob/master/0x02-redis_basic/images/meme.png)
+![meme](https://github.com/JohnIdyu/alx-backend-storage/blob/master/0x02-redis_basic/images/https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/1/40eab4627f1bea7dfe5e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230215%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230215T210332Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=777f546ba4e336f4becc80bc3f5e44c03ba4867363544f35046b4a81e851a82f)
 
 ## Resources
 
