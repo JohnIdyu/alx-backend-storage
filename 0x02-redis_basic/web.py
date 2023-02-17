@@ -5,7 +5,6 @@ create a web cache
 import redis
 import requests
 rc = redis.Redis()
-
 def get_page(url: str) -> str:
     """ get a page and cache value"""
     try:
@@ -16,7 +15,6 @@ def get_page(url: str) -> str:
     else:
         if cached_value == 1:
             rc.expire(f"cached:{url}", 10)
-
             try:
                 resp = requests.get(url)
                 rc.setex(f"page:{url}", 10, resp.text)
@@ -25,12 +23,8 @@ def get_page(url: str) -> str:
                 resp = ""
 
                 return resp.text
-
-
             if __name__ == "__main__":
                 urls = [
                         'http://slowwly.robertomurray.co.uk',
-
-
                         for url in urls:
                         print(get_page(url))
