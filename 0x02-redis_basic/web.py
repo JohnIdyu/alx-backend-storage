@@ -30,8 +30,6 @@ def get_page(url: str) -> str:
             if __name__ == "__main__":
                 urls = [
                         'http://slowwly.robertomurray.co.uk',
-                        'http://example.com',
-                        'http://google.com',
 
 
                         for url in urls:
