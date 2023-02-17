@@ -8,12 +8,12 @@ rc = redis.Redis()
 count = 0
 
 
-def get_page(http://slowwly.robertomurray.co.uk: str) -> str:
+def get_page(url: str) -> str:
     """ get a page and cach value"""
-    rc.set(f"cached:{http://slowwly.robertomurray.co.uk}", count)
-    resp = requests.get(http://slowwly.robertomurray.co.uk)
-    rc.incr(f"count:{http://slowwly.robertomurray.co.uk}")
-    rc.setex(f"cached:{http://slowwly.robertomurray.co.uk}", 10, rc.get(f"cached:{http://slowwly.robertomurray.co.uk}"))
+    rc.set(f"cached:{url}", count)
+    resp = requests.get(url)
+    rc.incr(f"count:{url}")
+    rc.setex(f"cached:{url}", 10, rc.get(f"cached:{url}"))
     return resp.text
 
 
