@@ -2,7 +2,7 @@
 
 | `Back-end` | `Redis` |
 
-![meme](images/meme.png)
+![meme](![https://github.com/JohnIdyu/alx-backend-storage/raw/master/0x02-redis_basic/images/meme.png)
 
 ## Resources
 
