@@ -16,23 +16,23 @@ def get_page(url: str) -> str:
     else:
         if cached_value == 1:
             rc.expire(f"cached:{url}", 10)
-    
-    try:
-        resp = requests.get(url)
-        rc.setex(f"page:{url}", 10, resp.text)
-    except requests.exceptions.RequestException as e:
-        print(f"Error fetching page: {e}")
-        resp = ""
-    
-    return resp.text
+
+            try:
+                resp = requests.get(url)
+                rc.setex(f"page:{url}", 10, resp.text)
+            except requests.exceptions.RequestException as e:
+                print(f"Error fetching page: {e}")
+                resp = ""
+
+                return resp.text
 
 
-if __name__ == "__main__":
-    urls = [
-        'http://slowwly.robertomurray.co.uk',
-        'http://example.com',
-        'http://google.com',
-    ]
-    
-    for url in urls:
-        print(get_page(url))
+            if __name__ == "__main__":
+                urls = [
+                        'http://slowwly.robertomurray.co.uk',
+                        'http://example.com',
+                        'http://google.com',
+
+
+                        for url in urls:
+                        print(get_page(url))
