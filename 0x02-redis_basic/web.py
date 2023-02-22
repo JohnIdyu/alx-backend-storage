@@ -3,7 +3,7 @@
 def get_page(url: str) -> str:).
 The core of the function is very simple.
 It uses the requests module to obtain
-the HTML content of a particular URL and returns it."""
+the HTML content of a particular URL and returns it"""
 import redis
 import requests
 r = redis.Redis()
